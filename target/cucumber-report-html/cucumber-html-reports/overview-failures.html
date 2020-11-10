@@ -78,7 +78,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Car-API-Automation</td>
               <td>1</td>
-            <td>10 Nov 2020, 05:09</td>
+            <td>10 Nov 2020, 06:50</td>
     </tr>
   </tbody>
 </table>
@@ -126,7 +126,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">1.281</span>
+  <span class="lead-duration duration">1.047</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -188,7 +188,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I perform GET operation with valid key &quot;&lt;locale&gt;&quot; manufacturer code and main types</span>
   
-  <span class="lead-duration duration">0.079</span>
+  <span class="lead-duration duration">0.063</span>
 
   </div>
 
@@ -209,7 +209,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">response structure should match with json schema of build dates</span>
   
-  <span class="lead-duration duration">1.046</span>
+  <span class="lead-duration duration">0.828</span>
 
   </div>
 
@@ -311,7 +311,7 @@ error: object has missing required properties ([&quot;page&quot;,&quot;pageSize&
   </div>
 
   
-  <span class="lead-duration duration">0.096</span>
+  <span class="lead-duration duration">0.095</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
@@ -352,7 +352,7 @@ error: object has missing required properties ([&quot;page&quot;,&quot;pageSize&
   <span class="keyword indention">Given</span>
   <span class="name">manufacturer API endpoint</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
   </div>
 
@@ -373,28 +373,7 @@ error: object has missing required properties ([&quot;page&quot;,&quot;pageSize&
   <span class="keyword indention">When</span>
   <span class="name">access build dates api with invalid token</span>
   
-  <span class="lead-duration duration">0.096</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">status code is 403 for build dates api</span>
-  
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.092</span>
 
   </div>
 
@@ -412,10 +391,10 @@ error: object has missing required properties ([&quot;page&quot;,&quot;pageSize&
           <div class="step">
         
 <div class="brief failed">
-  <span class="keyword indention">And</span>
-  <span class="name">build dates api response body contains message and error details</span>
+  <span class="keyword indention">Then</span>
+  <span class="name">status code is 403 for build dates api</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
   </div>
 
@@ -424,19 +403,41 @@ error: object has missing required properties ([&quot;page&quot;,&quot;pageSize&
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
-          <a>java.lang.AssertionError: error message is expected but not found </a>
+          <a>java.lang.AssertionError: expected:&lt;403&gt; but was:&lt;401&gt;</a>
       </div>
       <div id="msg-6" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: error message is expected but not found 
+        <pre>java.lang.AssertionError: expected:&lt;403&gt; but was:&lt;401&gt;
 	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertNotNull(Assert.java:713)
-	at stepDefinition.CarBuildDatesAPI.build_dates_api_response_body_contains_message_and_error_details(CarBuildDatesAPI.java:64)
-	at &#10045;.build dates api response body contains message and error details(file:///C:/Users/Trupti/IdeaProjects/API/src/test/java/feature/carBuildDatesAPI/car_build_dates_api_error.feature:13)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepDefinition.CarBuildDatesAPI.status_code_is_for_build_dates_api(CarBuildDatesAPI.java:59)
+	at &#10045;.status code is 403 for build dates api(file:///C:/Users/Trupti/IdeaProjects/API/src/test/java/feature/carBuildDatesAPI/car_build_dates_api_error.feature:12)
 </pre>
       </div>
     </div>
   </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">build dates api response body contains message and error details</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
 
 
         
@@ -468,7 +469,7 @@ error: object has missing required properties ([&quot;page&quot;,&quot;pageSize&
   </div>
 
   
-  <span class="lead-duration duration">0.136</span>
+  <span class="lead-duration duration">0.146</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
@@ -509,7 +510,7 @@ error: object has missing required properties ([&quot;page&quot;,&quot;pageSize&
   <span class="keyword indention">Given</span>
   <span class="name">main types API endpoint and manufacturer code</span>
   
-  <span class="lead-duration duration">0.072</span>
+  <span class="lead-duration duration">0.078</span>
 
   </div>
 
@@ -530,7 +531,28 @@ error: object has missing required properties ([&quot;page&quot;,&quot;pageSize&
   <span class="keyword indention">When</span>
   <span class="name">access main types api with invalid token</span>
   
-  <span class="lead-duration duration">0.064</span>
+  <span class="lead-duration duration">0.068</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status code is 403 for main types api</span>
+  
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -548,8 +570,8 @@ error: object has missing required properties ([&quot;page&quot;,&quot;pageSize&
           <div class="step">
         
 <div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">status code is 403 for main types api</span>
+  <span class="keyword indention">And</span>
+  <span class="name">main types api response body contains message and error details</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -560,41 +582,19 @@ error: object has missing required properties ([&quot;page&quot;,&quot;pageSize&
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-9">
-          <a>java.lang.AssertionError: expected:&lt;403&gt; but was:&lt;401&gt;</a>
+          <a>java.lang.AssertionError: error message is expected but not found </a>
       </div>
       <div id="msg-9" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: expected:&lt;403&gt; but was:&lt;401&gt;
+        <pre>java.lang.AssertionError: error message is expected but not found 
 	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at stepDefinition.CarMainTypesAPI.status_code_is_for_main_types_api(CarMainTypesAPI.java:47)
-	at &#10045;.status code is 403 for main types api(file:///C:/Users/Trupti/IdeaProjects/API/src/test/java/feature/carMainTypesAPI/car_main_types_api_error.feature:12)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at stepDefinition.CarMainTypesAPI.main_types_api_response_body_contains_message_and_error_details(CarMainTypesAPI.java:95)
+	at &#10045;.main types api response body contains message and error details(file:///C:/Users/Trupti/IdeaProjects/API/src/test/java/feature/carMainTypesAPI/car_main_types_api_error.feature:13)
 </pre>
       </div>
     </div>
   </div>
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">main types api response body contains message and error details</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-  </div>
-
-        
 
 
         
@@ -626,7 +626,7 @@ error: object has missing required properties ([&quot;page&quot;,&quot;pageSize&
   </div>
 
   
-  <span class="lead-duration duration">0.056</span>
+  <span class="lead-duration duration">0.060</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-10">
@@ -688,7 +688,7 @@ error: object has missing required properties ([&quot;page&quot;,&quot;pageSize&
   <span class="keyword indention">When</span>
   <span class="name">access manufacturer api with invalid token</span>
   
-  <span class="lead-duration duration">0.056</span>
+  <span class="lead-duration duration">0.059</span>
 
   </div>
 
@@ -709,7 +709,7 @@ error: object has missing required properties ([&quot;page&quot;,&quot;pageSize&
   <span class="keyword indention">Then</span>
   <span class="name">status code is 403</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
   </div>
 

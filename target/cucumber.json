@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-10T13:09:14.687Z",
+        "start_timestamp": "2020-11-10T14:50:44.374Z",
         "line": 10,
         "name": "Get list of all car build dates",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4208000000,
+              "duration": 3535000000,
               "status": "passed"
             },
             "line": 4,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 72000000,
+              "duration": 121000000,
               "status": "passed"
             },
             "line": 5,
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 8000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "line": 6,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 24000000,
+              "duration": 20000000,
               "status": "passed"
             },
             "line": 7,
@@ -74,7 +74,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-10T13:09:19.167Z",
+        "start_timestamp": "2020-11-10T14:50:48.209Z",
         "line": 11,
         "name": "Get list of all car build dates",
         "description": "",
@@ -84,7 +84,7 @@
         "steps": [
           {
             "result": {
-              "duration": 328000000,
+              "duration": 244000000,
               "status": "passed"
             },
             "line": 4,
@@ -96,7 +96,7 @@
           },
           {
             "result": {
-              "duration": 64000000,
+              "duration": 79000000,
               "status": "passed"
             },
             "line": 5,
@@ -131,7 +131,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 15000000,
               "status": "passed"
             },
             "line": 7,
@@ -144,7 +144,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-10T13:09:19.591Z",
+        "start_timestamp": "2020-11-10T14:50:48.548Z",
         "line": 13,
         "name": "Get list of car build dates with valid token manufacturer code and without locale",
         "description": "",
@@ -154,7 +154,7 @@
         "steps": [
           {
             "result": {
-              "duration": 176000000,
+              "duration": 172000000,
               "status": "passed"
             },
             "line": 14,
@@ -166,7 +166,7 @@
           },
           {
             "result": {
-              "duration": 66000000,
+              "duration": 63000000,
               "status": "passed"
             },
             "line": 15,
@@ -184,6 +184,7 @@
           },
           {
             "result": {
+              "duration": 15000000,
               "status": "passed"
             },
             "line": 16,
@@ -213,7 +214,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-10T13:09:19.833Z",
+        "start_timestamp": "2020-11-10T14:50:48.798Z",
         "line": 20,
         "name": "Json schema validation for build date api",
         "description": "",
@@ -235,7 +236,7 @@
           },
           {
             "result": {
-              "duration": 79000000,
+              "duration": 63000000,
               "status": "passed"
             },
             "line": 22,
@@ -254,7 +255,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: 1 expectation failed.\nResponse body doesn\u0027t match expectation.\nExpected: The content to match the given JSON schema.\nerror: object has missing required properties ([\"page\",\"pageSize\",\"totalPageCount\"])\n    level: \"error\"\n    schema: {\"loadingURI\":\"file:/C:/Users/Trupti/IdeaProjects/API/target/test-classes/response_json_schema.json#\",\"pointer\":\"\"}\n    instance: {\"pointer\":\"\"}\n    domain: \"validation\"\n    keyword: \"required\"\n    required: [\"page\",\"pageSize\",\"totalPageCount\",\"wkda\"]\n    missing: [\"page\",\"pageSize\",\"totalPageCount\"]\n\n  Actual: {\"wkda\":{\"2016\":\"2016\",\"2017\":\"2017\",\"2018\":\"2018\",\"2019\":\"2019\"}}\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:98)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:293)\r\n\tat io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)\r\n\tat stepDefinition.CarBuildDatesAPI.response_structure_should_match_with_json_schema_of_build_dates(CarBuildDatesAPI.java:82)\r\n\tat ✽.response structure should match with json schema of build dates(file:///C:/Users/Trupti/IdeaProjects/API/src/test/java/feature/carBuildDatesAPI/car_build_dates_api.feature:23)\r\n",
-              "duration": 1046000000,
+              "duration": 828000000,
               "status": "failed"
             },
             "line": 23,
@@ -278,7 +279,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-10T13:09:21.146Z",
+        "start_timestamp": "2020-11-10T14:50:49.861Z",
         "line": 3,
         "name": "user should not get car build date details without key",
         "description": "",
@@ -288,7 +289,7 @@
         "steps": [
           {
             "result": {
-              "duration": 178000000,
+              "duration": 329000000,
               "status": "passed"
             },
             "line": 4,
@@ -300,7 +301,7 @@
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 88000000,
               "status": "passed"
             },
             "line": 5,
@@ -329,7 +330,7 @@
           },
           {
             "result": {
-              "duration": 24000000,
+              "duration": 20000000,
               "status": "passed"
             },
             "line": 7,
@@ -342,7 +343,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-10T13:09:21.412Z",
+        "start_timestamp": "2020-11-10T14:50:50.304Z",
         "line": 9,
         "name": "user should not get car build date details with invalid key",
         "description": "",
@@ -352,6 +353,7 @@
         "steps": [
           {
             "result": {
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 10,
@@ -363,7 +365,7 @@
           },
           {
             "result": {
-              "duration": 96000000,
+              "duration": 92000000,
               "status": "passed"
             },
             "line": 11,
@@ -375,7 +377,9 @@
           },
           {
             "result": {
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c403\u003e but was:\u003c401\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat stepDefinition.CarBuildDatesAPI.status_code_is_for_build_dates_api(CarBuildDatesAPI.java:59)\r\n\tat ✽.status code is 403 for build dates api(file:///C:/Users/Trupti/IdeaProjects/API/src/test/java/feature/carBuildDatesAPI/car_build_dates_api_error.feature:12)\r\n",
+              "duration": 1000000,
+              "status": "failed"
             },
             "line": 12,
             "name": "status code is 403 for build dates api",
@@ -392,8 +396,7 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: error message is expected but not found \r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertNotNull(Assert.java:713)\r\n\tat stepDefinition.CarBuildDatesAPI.build_dates_api_response_body_contains_message_and_error_details(CarBuildDatesAPI.java:64)\r\n\tat ✽.build dates api response body contains message and error details(file:///C:/Users/Trupti/IdeaProjects/API/src/test/java/feature/carBuildDatesAPI/car_build_dates_api_error.feature:13)\r\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 13,
             "name": "build dates api response body contains message and error details",
@@ -405,7 +408,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-10T13:09:21.516Z",
+        "start_timestamp": "2020-11-10T14:50:50.406Z",
         "line": 15,
         "name": "user should not get car build date details with invalid locale",
         "description": "",
@@ -415,6 +418,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 16,
@@ -426,7 +430,7 @@
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 63000000,
               "status": "passed"
             },
             "line": 17,
@@ -438,7 +442,6 @@
           },
           {
             "result": {
-              "duration": 8000000,
               "status": "passed"
             },
             "line": 18,
@@ -468,7 +471,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-10T13:09:21.588Z",
+        "start_timestamp": "2020-11-10T14:50:50.476Z",
         "line": 10,
         "name": "Get list of car main-types with valid token and locale as GB",
         "description": "",
@@ -478,7 +481,7 @@
         "steps": [
           {
             "result": {
-              "duration": 80000000,
+              "duration": 70000000,
               "status": "passed"
             },
             "line": 4,
@@ -490,7 +493,7 @@
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 62000000,
               "status": "passed"
             },
             "line": 5,
@@ -525,7 +528,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 17000000,
               "status": "passed"
             },
             "line": 7,
@@ -538,7 +541,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-10T13:09:21.748Z",
+        "start_timestamp": "2020-11-10T14:50:50.633Z",
         "line": 11,
         "name": "Get list of car main-types with valid token and locale as GB",
         "description": "",
@@ -548,7 +551,7 @@
         "steps": [
           {
             "result": {
-              "duration": 90000000,
+              "duration": 75000000,
               "status": "passed"
             },
             "line": 4,
@@ -560,7 +563,7 @@
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 67000000,
               "status": "passed"
             },
             "line": 5,
@@ -595,7 +598,7 @@
           },
           {
             "result": {
-              "duration": 32000000,
+              "duration": 28000000,
               "status": "passed"
             },
             "line": 7,
@@ -608,7 +611,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-10T13:09:21.934Z",
+        "start_timestamp": "2020-11-10T14:50:50.810Z",
         "line": 13,
         "name": "Get list of car main types with valid token manufacturer code and without locale",
         "description": "",
@@ -618,7 +621,7 @@
         "steps": [
           {
             "result": {
-              "duration": 80000000,
+              "duration": 71000000,
               "status": "passed"
             },
             "line": 14,
@@ -630,7 +633,7 @@
           },
           {
             "result": {
-              "duration": 64000000,
+              "duration": 71000000,
               "status": "passed"
             },
             "line": 15,
@@ -659,7 +662,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 17,
@@ -672,7 +675,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-10T13:09:22.102Z",
+        "start_timestamp": "2020-11-10T14:50:50.960Z",
         "line": 20,
         "name": "Json schema validation for main types api",
         "description": "",
@@ -682,7 +685,7 @@
         "steps": [
           {
             "result": {
-              "duration": 112000000,
+              "duration": 72000000,
               "status": "passed"
             },
             "line": 21,
@@ -694,7 +697,7 @@
           },
           {
             "result": {
-              "duration": 64000000,
+              "duration": 58000000,
               "status": "passed"
             },
             "line": 22,
@@ -736,7 +739,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-10T13:09:22.302Z",
+        "start_timestamp": "2020-11-10T14:50:51.112Z",
         "line": 3,
         "name": "user should not get car main types list without key",
         "description": "",
@@ -746,7 +749,7 @@
         "steps": [
           {
             "result": {
-              "duration": 72000000,
+              "duration": 74000000,
               "status": "passed"
             },
             "line": 4,
@@ -758,7 +761,7 @@
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 57000000,
               "status": "passed"
             },
             "line": 5,
@@ -770,6 +773,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 6,
@@ -787,7 +791,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 14000000,
               "status": "passed"
             },
             "line": 7,
@@ -800,7 +804,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-10T13:09:22.454Z",
+        "start_timestamp": "2020-11-10T14:50:51.266Z",
         "line": 9,
         "name": "user should not get car main types list with invalid key",
         "description": "",
@@ -810,7 +814,7 @@
         "steps": [
           {
             "result": {
-              "duration": 72000000,
+              "duration": 78000000,
               "status": "passed"
             },
             "line": 10,
@@ -822,7 +826,7 @@
           },
           {
             "result": {
-              "duration": 64000000,
+              "duration": 68000000,
               "status": "passed"
             },
             "line": 11,
@@ -834,8 +838,7 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c403\u003e but was:\u003c401\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat stepDefinition.CarMainTypesAPI.status_code_is_for_main_types_api(CarMainTypesAPI.java:47)\r\n\tat ✽.status code is 403 for main types api(file:///C:/Users/Trupti/IdeaProjects/API/src/test/java/feature/carMainTypesAPI/car_main_types_api_error.feature:12)\r\n",
-              "status": "failed"
+              "status": "passed"
             },
             "line": 12,
             "name": "status code is 403 for main types api",
@@ -852,7 +855,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "java.lang.AssertionError: error message is expected but not found \r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertNotNull(Assert.java:713)\r\n\tat stepDefinition.CarMainTypesAPI.main_types_api_response_body_contains_message_and_error_details(CarMainTypesAPI.java:95)\r\n\tat ✽.main types api response body contains message and error details(file:///C:/Users/Trupti/IdeaProjects/API/src/test/java/feature/carMainTypesAPI/car_main_types_api_error.feature:13)\r\n",
+              "status": "failed"
             },
             "line": 13,
             "name": "main types api response body contains message and error details",
@@ -864,7 +868,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-10T13:09:22.598Z",
+        "start_timestamp": "2020-11-10T14:50:51.426Z",
         "line": 15,
         "name": "user should not get car main types list with invalid locale",
         "description": "",
@@ -874,7 +878,7 @@
         "steps": [
           {
             "result": {
-              "duration": 96000000,
+              "duration": 89000000,
               "status": "passed"
             },
             "line": 16,
@@ -886,7 +890,7 @@
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 63000000,
               "status": "passed"
             },
             "line": 17,
@@ -927,7 +931,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-10T13:09:22.758Z",
+        "start_timestamp": "2020-11-10T14:50:51.582Z",
         "line": 10,
         "name": "Get list of car manufacturers with valid token and locale as GB",
         "description": "",
@@ -937,6 +941,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 4,
@@ -948,7 +953,7 @@
           },
           {
             "result": {
-              "duration": 65000000,
+              "duration": 72000000,
               "status": "passed"
             },
             "line": 5,
@@ -983,7 +988,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 17000000,
               "status": "passed"
             },
             "line": 7,
@@ -996,7 +1001,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-10T13:09:22.847Z",
+        "start_timestamp": "2020-11-10T14:50:51.680Z",
         "line": 11,
         "name": "Get list of car manufacturers with valid token and locale as GB",
         "description": "",
@@ -1006,6 +1011,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 4,
@@ -1017,7 +1023,7 @@
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 55000000,
               "status": "passed"
             },
             "line": 5,
@@ -1035,7 +1041,6 @@
           },
           {
             "result": {
-              "duration": 8000000,
               "status": "passed"
             },
             "line": 6,
@@ -1053,7 +1058,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 18000000,
               "status": "passed"
             },
             "line": 7,
@@ -1066,7 +1071,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-10T13:09:22.927Z",
+        "start_timestamp": "2020-11-10T14:50:51.760Z",
         "line": 13,
         "name": "Get list of car manufacturers with valid token and without locale",
         "description": "",
@@ -1087,7 +1092,7 @@
           },
           {
             "result": {
-              "duration": 64000000,
+              "duration": 56000000,
               "status": "passed"
             },
             "line": 15,
@@ -1128,7 +1133,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-10T13:09:22.991Z",
+        "start_timestamp": "2020-11-10T14:50:51.819Z",
         "line": 20,
         "name": "Json schema validation for manufacturer api",
         "description": "",
@@ -1149,7 +1154,7 @@
           },
           {
             "result": {
-              "duration": 64000000,
+              "duration": 55000000,
               "status": "passed"
             },
             "line": 22,
@@ -1167,7 +1172,7 @@
           },
           {
             "result": {
-              "duration": 8000000,
+              "duration": 25000000,
               "status": "passed"
             },
             "line": 23,
@@ -1191,7 +1196,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-10T13:09:23.071Z",
+        "start_timestamp": "2020-11-10T14:50:51.909Z",
         "line": 3,
         "name": "user should not get manufacturer list without key",
         "description": "",
@@ -1212,7 +1217,7 @@
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 53000000,
               "status": "passed"
             },
             "line": 5,
@@ -1241,7 +1246,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 10000000,
               "status": "passed"
             },
             "line": 7,
@@ -1254,7 +1259,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-10T13:09:23.151Z",
+        "start_timestamp": "2020-11-10T14:50:51.980Z",
         "line": 9,
         "name": "user should not get manufacturer list with invalid key",
         "description": "",
@@ -1275,7 +1280,7 @@
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 59000000,
               "status": "passed"
             },
             "line": 11,
@@ -1288,6 +1293,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: expected:\u003c403\u003e but was:\u003c401\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat stepDefinition.CarManufacturerAPI.status_code_is(CarManufacturerAPI.java:39)\r\n\tat ✽.status code is 403(file:///C:/Users/Trupti/IdeaProjects/API/src/test/java/feature/carManufacturerAPI/car_manufacturer_api_error.feature:12)\r\n",
+              "duration": 1000000,
               "status": "failed"
             },
             "line": 12,
@@ -1317,7 +1323,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-10T13:09:23.215Z",
+        "start_timestamp": "2020-11-10T14:50:52.045Z",
         "line": 15,
         "name": "user should not get manufacturer list with invalid locale",
         "description": "",
@@ -1338,7 +1344,7 @@
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 60000000,
               "status": "passed"
             },
             "line": 17,

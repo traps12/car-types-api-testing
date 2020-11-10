@@ -77,7 +77,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Car-API-Automation</td>
               <td>1</td>
-            <td>10 Nov 2020, 05:09</td>
+            <td>10 Nov 2020, 06:50</td>
     </tr>
   </tbody>
 </table>
@@ -130,9 +130,9 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Verify errors for car build dates api</td>
-                    <td      class="passed"    >10</td>
+                    <td      class="passed"    >9</td>
           <td      class="failed"    >1</td>
-          <td >0</td>
+          <td     class="skipped"   >1</td>
           <td >0</td>
           <td >0</td>
           <td class="total">11</td>
@@ -141,7 +141,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">3</td>
 
-          <td class="duration" data-value="418000000">0.418</td>
+          <td class="duration" data-value="596000000">0.596</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -192,7 +192,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">0.258</span>
+  <span class="lead-duration duration">0.437</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -233,7 +233,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">build dates API endpoint and main type and manufacturer code</span>
   
-  <span class="lead-duration duration">0.178</span>
+  <span class="lead-duration duration">0.329</span>
 
   </div>
 
@@ -254,7 +254,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">access build dates api without token</span>
   
-  <span class="lead-duration duration">0.056</span>
+  <span class="lead-duration duration">0.088</span>
 
   </div>
 
@@ -296,7 +296,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">build dates api response body contains message and error details</span>
   
-  <span class="lead-duration duration">0.024</span>
+  <span class="lead-duration duration">0.020</span>
 
   </div>
 
@@ -328,7 +328,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">0.096</span>
+  <span class="lead-duration duration">0.095</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
@@ -369,7 +369,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">manufacturer API endpoint</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
   </div>
 
@@ -390,28 +390,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">access build dates api with invalid token</span>
   
-  <span class="lead-duration duration">0.096</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">status code is 403 for build dates api</span>
-  
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.092</span>
 
   </div>
 
@@ -429,10 +408,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief failed">
-  <span class="keyword indention">And</span>
-  <span class="name">build dates api response body contains message and error details</span>
+  <span class="keyword indention">Then</span>
+  <span class="name">status code is 403 for build dates api</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
   </div>
 
@@ -441,19 +420,41 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
-          <a>java.lang.AssertionError: error message is expected but not found </a>
+          <a>java.lang.AssertionError: expected:&lt;403&gt; but was:&lt;401&gt;</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: error message is expected but not found 
+        <pre>java.lang.AssertionError: expected:&lt;403&gt; but was:&lt;401&gt;
 	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertNotNull(Assert.java:713)
-	at stepDefinition.CarBuildDatesAPI.build_dates_api_response_body_contains_message_and_error_details(CarBuildDatesAPI.java:64)
-	at &#10045;.build dates api response body contains message and error details(file:///C:/Users/Trupti/IdeaProjects/API/src/test/java/feature/carBuildDatesAPI/car_build_dates_api_error.feature:13)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepDefinition.CarBuildDatesAPI.status_code_is_for_build_dates_api(CarBuildDatesAPI.java:59)
+	at &#10045;.status code is 403 for build dates api(file:///C:/Users/Trupti/IdeaProjects/API/src/test/java/feature/carBuildDatesAPI/car_build_dates_api_error.feature:12)
 </pre>
       </div>
     </div>
   </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">build dates api response body contains message and error details</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
 
 
         
@@ -522,7 +523,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">manufacturer API endpoint</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
   </div>
 
@@ -543,7 +544,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">access build dates api with invalid locale</span>
   
-  <span class="lead-duration duration">0.056</span>
+  <span class="lead-duration duration">0.063</span>
 
   </div>
 
@@ -564,7 +565,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">status code is 200 for build dates api</span>
   
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
