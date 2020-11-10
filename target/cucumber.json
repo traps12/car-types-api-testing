@@ -1,0 +1,1376 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-10T12:48:02.287Z",
+        "line": 10,
+        "name": "Get list of all car build dates",
+        "description": "",
+        "id": "get-list-of-car-build-dates-for-given-manufacture-and-main-types;get-list-of-all-car-build-dates;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3371000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "build dates API endpoint and main type and manufacturer code",
+            "match": {
+              "location": "stepDefinition.CarBuildDatesAPI.build_dates_api_endpoint_and_main_type_and_manufacturer_code()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I perform GET operation with valid key \"GB\" manufacturer code and main types",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GB\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinition.CarBuildDatesAPI.i_perform_get_operation_with_valid_key_manufacturer_code_and_main_types(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "status code is 200 for build dates api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.CarBuildDatesAPI.status_code_is_for_build_dates_api(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I get list of build dates of car in response body",
+            "match": {
+              "location": "stepDefinition.CarBuildDatesAPI.i_get_list_of_build_dates_of_car_in_response_body()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T12:48:05.935Z",
+        "line": 11,
+        "name": "Get list of all car build dates",
+        "description": "",
+        "id": "get-list-of-car-build-dates-for-given-manufacture-and-main-types;get-list-of-all-car-build-dates;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 187000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "build dates API endpoint and main type and manufacturer code",
+            "match": {
+              "location": "stepDefinition.CarBuildDatesAPI.build_dates_api_endpoint_and_main_type_and_manufacturer_code()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 82000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I perform GET operation with valid key \"DE\" manufacturer code and main types",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DE\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinition.CarBuildDatesAPI.i_perform_get_operation_with_valid_key_manufacturer_code_and_main_types(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "status code is 200 for build dates api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.CarBuildDatesAPI.status_code_is_for_build_dates_api(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I get list of build dates of car in response body",
+            "match": {
+              "location": "stepDefinition.CarBuildDatesAPI.i_get_list_of_build_dates_of_car_in_response_body()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T12:48:06.228Z",
+        "line": 13,
+        "name": "Get list of car build dates with valid token manufacturer code and without locale",
+        "description": "",
+        "id": "get-list-of-car-build-dates-for-given-manufacture-and-main-types;get-list-of-car-build-dates-with-valid-token-manufacturer-code-and-without-locale",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 184000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "build dates API endpoint and main type and manufacturer code",
+            "match": {
+              "location": "stepDefinition.CarBuildDatesAPI.build_dates_api_endpoint_and_main_type_and_manufacturer_code()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 80000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I perform GET operation with valid key \"\u003clocale\u003e\" manufacturer code and main types",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003clocale\u003e\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinition.CarBuildDatesAPI.i_perform_get_operation_with_valid_key_manufacturer_code_and_main_types(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "status code is 200 for build dates api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.CarBuildDatesAPI.status_code_is_for_build_dates_api(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "build date api should work with default locale",
+            "match": {
+              "location": "stepDefinition.CarBuildDatesAPI.build_date_api_should_work_with_default_locale()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T12:48:06.501Z",
+        "line": 20,
+        "name": "Json schema validation for build date api",
+        "description": "",
+        "id": "get-list-of-car-build-dates-for-given-manufacture-and-main-types;json-schema-validation-for-build-date-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 156000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "build dates API endpoint and main type and manufacturer code",
+            "match": {
+              "location": "stepDefinition.CarBuildDatesAPI.build_dates_api_endpoint_and_main_type_and_manufacturer_code()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 79000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I perform GET operation with valid key \"\u003clocale\u003e\" manufacturer code and main types",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003clocale\u003e\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinition.CarBuildDatesAPI.i_perform_get_operation_with_valid_key_manufacturer_code_and_main_types(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nResponse body doesn\u0027t match expectation.\nExpected: The content to match the given JSON schema.\nerror: object has missing required properties ([\"page\",\"pageSize\",\"totalPageCount\"])\n    level: \"error\"\n    schema: {\"loadingURI\":\"file:/C:/Users/Trupti/IdeaProjects/API/target/test-classes/response_json_schema.json#\",\"pointer\":\"\"}\n    instance: {\"pointer\":\"\"}\n    domain: \"validation\"\n    keyword: \"required\"\n    required: [\"page\",\"pageSize\",\"totalPageCount\",\"wkda\"]\n    missing: [\"page\",\"pageSize\",\"totalPageCount\"]\n\n  Actual: {\"wkda\":{\"2016\":\"2016\",\"2017\":\"2017\",\"2018\":\"2018\",\"2019\":\"2019\"}}\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:98)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:293)\r\n\tat io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)\r\n\tat stepDefinition.CarBuildDatesAPI.response_structure_should_match_with_json_schema_of_build_dates(CarBuildDatesAPI.java:82)\r\n\tat ✽.response structure should match with json schema of build dates(file:///C:/Users/Trupti/IdeaProjects/API/src/test/java/feature/carBuildDatesAPI/car_build_dates_api.feature:23)\r\n",
+              "duration": 936000000,
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "response structure should match with json schema of build dates",
+            "match": {
+              "location": "stepDefinition.CarBuildDatesAPI.response_structure_should_match_with_json_schema_of_build_dates()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Get list of car build dates for given manufacture and main types",
+    "description": "",
+    "id": "get-list-of-car-build-dates-for-given-manufacture-and-main-types",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/carBuildDatesAPI/car_build_dates_api.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-10T12:48:07.688Z",
+        "line": 3,
+        "name": "user should not get car build date details without key",
+        "description": "",
+        "id": "verify-errors-for-car-build-dates-api;user-should-not-get-car-build-date-details-without-key",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 172000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "build dates API endpoint and main type and manufacturer code",
+            "match": {
+              "location": "stepDefinition.CarBuildDatesAPI.build_dates_api_endpoint_and_main_type_and_manufacturer_code()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 62000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "access build dates api without token",
+            "match": {
+              "location": "stepDefinition.CarBuildDatesAPI.access_build_dates_api_without_token()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "status code is 401 for build dates api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.CarBuildDatesAPI.status_code_is_for_build_dates_api(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: error message is expected but not found \r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertNotNull(Assert.java:713)\r\n\tat stepDefinition.CarBuildDatesAPI.build_dates_api_response_body_contains_message_and_error_details(CarBuildDatesAPI.java:64)\r\n\tat ✽.build dates api response body contains message and error details(file:///C:/Users/Trupti/IdeaProjects/API/src/test/java/feature/carBuildDatesAPI/car_build_dates_api_error.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "build dates api response body contains message and error details",
+            "match": {
+              "location": "stepDefinition.CarBuildDatesAPI.build_dates_api_response_body_contains_message_and_error_details()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T12:48:07.922Z",
+        "line": 9,
+        "name": "user should not get car build date details with invalid key",
+        "description": "",
+        "id": "verify-errors-for-car-build-dates-api;user-should-not-get-car-build-date-details-with-invalid-key",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "manufacturer API endpoint",
+            "match": {
+              "location": "stepDefinition.CarManufacturerAPI.manufacturer_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 94000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "access build dates api with invalid token",
+            "match": {
+              "location": "stepDefinition.CarBuildDatesAPI.access_build_dates_api_with_invalid_token()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "status code is 403 for build dates api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "403",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.CarBuildDatesAPI.status_code_is_for_build_dates_api(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: error message is expected but not found \r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertNotNull(Assert.java:713)\r\n\tat stepDefinition.CarBuildDatesAPI.build_dates_api_response_body_contains_message_and_error_details(CarBuildDatesAPI.java:64)\r\n\tat ✽.build dates api response body contains message and error details(file:///C:/Users/Trupti/IdeaProjects/API/src/test/java/feature/carBuildDatesAPI/car_build_dates_api_error.feature:13)\r\n",
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "build dates api response body contains message and error details",
+            "match": {
+              "location": "stepDefinition.CarBuildDatesAPI.build_dates_api_response_body_contains_message_and_error_details()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T12:48:08.032Z",
+        "line": 15,
+        "name": "user should not get car build date details with invalid locale",
+        "description": "",
+        "id": "verify-errors-for-car-build-dates-api;user-should-not-get-car-build-date-details-with-invalid-locale",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "manufacturer API endpoint",
+            "match": {
+              "location": "stepDefinition.CarManufacturerAPI.manufacturer_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 62000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "access build dates api with invalid locale",
+            "match": {
+              "location": "stepDefinition.CarBuildDatesAPI.access_build_dates_api_with_invalid_locale()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "status code is 200 for build dates api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.CarBuildDatesAPI.status_code_is_for_build_dates_api(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify errors for car build dates api",
+    "description": "",
+    "id": "verify-errors-for-car-build-dates-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/carBuildDatesAPI/car_build_dates_api_error.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-10T12:48:08.110Z",
+        "line": 10,
+        "name": "Get list of car main-types with valid token and locale as GB",
+        "description": "",
+        "id": "get-list-of-main-types-for-given-manufacture;get-list-of-car-main-types-with-valid-token-and-locale-as-gb;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 94000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "main types API endpoint and manufacturer code",
+            "match": {
+              "location": "stepDefinition.CarMainTypesAPI.main_types_api_endpoint_and_manufacturer_code()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 64000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I perform GET operation with valid key and \"GB\" and manufacturer code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GB\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinition.CarMainTypesAPI.i_perform_get_operation_with_valid_key_and_and_manufacturer_code(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "status code is 200 for main types api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.CarMainTypesAPI.status_code_is_for_main_types_api(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I get list of main types of car in response body",
+            "match": {
+              "location": "stepDefinition.CarMainTypesAPI.i_get_list_of_main_types_of_car_in_response_body()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T12:48:08.292Z",
+        "line": 11,
+        "name": "Get list of car main-types with valid token and locale as GB",
+        "description": "",
+        "id": "get-list-of-main-types-for-given-manufacture;get-list-of-car-main-types-with-valid-token-and-locale-as-gb;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 80000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "main types API endpoint and manufacturer code",
+            "match": {
+              "location": "stepDefinition.CarMainTypesAPI.main_types_api_endpoint_and_manufacturer_code()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 64000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I perform GET operation with valid key and \"DE\" and manufacturer code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DE\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinition.CarMainTypesAPI.i_perform_get_operation_with_valid_key_and_and_manufacturer_code(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "status code is 200 for main types api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.CarMainTypesAPI.status_code_is_for_main_types_api(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I get list of main types of car in response body",
+            "match": {
+              "location": "stepDefinition.CarMainTypesAPI.i_get_list_of_main_types_of_car_in_response_body()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T12:48:08.468Z",
+        "line": 13,
+        "name": "Get list of car main types with valid token manufacturer code and without locale",
+        "description": "",
+        "id": "get-list-of-main-types-for-given-manufacture;get-list-of-car-main-types-with-valid-token-manufacturer-code-and-without-locale",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 94000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "main types API endpoint and manufacturer code",
+            "match": {
+              "location": "stepDefinition.CarMainTypesAPI.main_types_api_endpoint_and_manufacturer_code()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 62000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user access main type api with valid token manufacturer code and without locale",
+            "match": {
+              "location": "stepDefinition.CarMainTypesAPI.user_access_main_type_api_with_valid_token_manufacturer_code_and_without_locale()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "status code is 200 for main types api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.CarMainTypesAPI.status_code_is_for_main_types_api(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "main type api should work with default locale",
+            "match": {
+              "location": "stepDefinition.CarMainTypesAPI.main_type_api_should_work_with_default_locale()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T12:48:08.640Z",
+        "line": 20,
+        "name": "Json schema validation for main types api",
+        "description": "",
+        "id": "get-list-of-main-types-for-given-manufacture;json-schema-validation-for-main-types-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "main types API endpoint and manufacturer code",
+            "match": {
+              "location": "stepDefinition.CarMainTypesAPI.main_types_api_endpoint_and_manufacturer_code()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I perform GET operation with valid key and \"en\" and manufacturer code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"en\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinition.CarMainTypesAPI.i_perform_get_operation_with_valid_key_and_and_manufacturer_code(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "response structure should match with json schema of main type",
+            "match": {
+              "location": "stepDefinition.CarMainTypesAPI.response_structure_should_match_with_json_schema_of_main_type()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Get list of main types for given manufacture",
+    "description": "",
+    "id": "get-list-of-main-types-for-given-manufacture",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/carMainTypesAPI/car_main_types_api.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-10T12:48:08.812Z",
+        "line": 3,
+        "name": "user should not get car main types list without key",
+        "description": "",
+        "id": "verify-errors-for-car-main-types-api;user-should-not-get-car-main-types-list-without-key",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "main types API endpoint and manufacturer code",
+            "match": {
+              "location": "stepDefinition.CarMainTypesAPI.main_types_api_endpoint_and_manufacturer_code()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 62000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "access main types api without token",
+            "match": {
+              "location": "stepDefinition.CarMainTypesAPI.access_main_types_api_without_token()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "status code is 401 for main types api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.CarMainTypesAPI.status_code_is_for_main_types_api(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "main types api response body contains message and error details",
+            "match": {
+              "location": "stepDefinition.CarMainTypesAPI.main_types_api_response_body_contains_message_and_error_details()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T12:48:08.968Z",
+        "line": 9,
+        "name": "user should not get car main types list with invalid key",
+        "description": "",
+        "id": "verify-errors-for-car-main-types-api;user-should-not-get-car-main-types-list-with-invalid-key",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 94000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "main types API endpoint and manufacturer code",
+            "match": {
+              "location": "stepDefinition.CarMainTypesAPI.main_types_api_endpoint_and_manufacturer_code()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 88000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "access main types api with invalid token",
+            "match": {
+              "location": "stepDefinition.CarMainTypesAPI.access_main_types_api_with_invalid_token()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "status code is 403 for main types api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "403",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.CarMainTypesAPI.status_code_is_for_main_types_api(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: error message is expected but not found \r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertNotNull(Assert.java:713)\r\n\tat stepDefinition.CarMainTypesAPI.main_types_api_response_body_contains_message_and_error_details(CarMainTypesAPI.java:95)\r\n\tat ✽.main types api response body contains message and error details(file:///C:/Users/Trupti/IdeaProjects/API/src/test/java/feature/carMainTypesAPI/car_main_types_api_error.feature:13)\r\n",
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "main types api response body contains message and error details",
+            "match": {
+              "location": "stepDefinition.CarMainTypesAPI.main_types_api_response_body_contains_message_and_error_details()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T12:48:09.166Z",
+        "line": 15,
+        "name": "user should not get car main types list with invalid locale",
+        "description": "",
+        "id": "verify-errors-for-car-main-types-api;user-should-not-get-car-main-types-list-with-invalid-locale",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 128000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "main types API endpoint and manufacturer code",
+            "match": {
+              "location": "stepDefinition.CarMainTypesAPI.main_types_api_endpoint_and_manufacturer_code()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 64000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "access main types api with invalid locale",
+            "match": {
+              "location": "stepDefinition.CarMainTypesAPI.access_main_types_api_with_invalid_locale()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "status code is 200 for main types api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.CarMainTypesAPI.status_code_is_for_main_types_api(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify errors for car main types api",
+    "description": "",
+    "id": "verify-errors-for-car-main-types-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/carMainTypesAPI/car_main_types_api_error.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-10T12:48:09.366Z",
+        "line": 10,
+        "name": "Get list of car manufacturers with valid token and locale as GB",
+        "description": "",
+        "id": "get-list-of-car-manufacture;get-list-of-car-manufacturers-with-valid-token-and-locale-as-gb;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "manufacturer API endpoint",
+            "match": {
+              "location": "stepDefinition.CarManufacturerAPI.manufacturer_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 60000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I perform GET operation with valid key and \"GB\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GB\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinition.CarManufacturerAPI.i_perform_get_operation_with_valid_key_and(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.CarManufacturerAPI.status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I get list of manufacturer car types in response body",
+            "match": {
+              "location": "stepDefinition.CarManufacturerAPI.i_get_list_of_manufacturer_car_types_in_response_body()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T12:48:09.450Z",
+        "line": 11,
+        "name": "Get list of car manufacturers with valid token and locale as GB",
+        "description": "",
+        "id": "get-list-of-car-manufacture;get-list-of-car-manufacturers-with-valid-token-and-locale-as-gb;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "manufacturer API endpoint",
+            "match": {
+              "location": "stepDefinition.CarManufacturerAPI.manufacturer_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 56000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I perform GET operation with valid key and \"DE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DE\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinition.CarManufacturerAPI.i_perform_get_operation_with_valid_key_and(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.CarManufacturerAPI.status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 24000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I get list of manufacturer car types in response body",
+            "match": {
+              "location": "stepDefinition.CarManufacturerAPI.i_get_list_of_manufacturer_car_types_in_response_body()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T12:48:09.554Z",
+        "line": 13,
+        "name": "Get list of car manufacturers with valid token and without locale",
+        "description": "",
+        "id": "get-list-of-car-manufacture;get-list-of-car-manufacturers-with-valid-token-and-without-locale",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "manufacturer API endpoint",
+            "match": {
+              "location": "stepDefinition.CarManufacturerAPI.manufacturer_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 64000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user access resource with valid token and without locale",
+            "match": {
+              "location": "stepDefinition.CarManufacturerAPI.user_access_resource_with_valid_token_and_without_locale()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.CarManufacturerAPI.status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "api should work with default locale",
+            "match": {
+              "location": "stepDefinition.CarManufacturerAPI.api_should_work_with_default_locale()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T12:48:09.626Z",
+        "line": 20,
+        "name": "Json schema validation for manufacturer api",
+        "description": "",
+        "id": "get-list-of-car-manufacture;json-schema-validation-for-manufacturer-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "manufacturer API endpoint",
+            "match": {
+              "location": "stepDefinition.CarManufacturerAPI.manufacturer_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 64000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I perform GET operation with valid key and \"GB\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GB\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinition.CarManufacturerAPI.i_perform_get_operation_with_valid_key_and(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "response structure should match with json schema",
+            "match": {
+              "location": "stepDefinition.CarManufacturerAPI.response_structure_should_match_with_json_schema()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Get list of car manufacture",
+    "description": "",
+    "id": "get-list-of-car-manufacture",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/carManufacturerAPI/car_manufacturer_api.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-10T12:48:09.714Z",
+        "line": 3,
+        "name": "user should not get manufacturer list without key",
+        "description": "",
+        "id": "verify-errors-for-car-manufacturer-api;user-should-not-get-manufacturer-list-without-key",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "manufacturer API endpoint",
+            "match": {
+              "location": "stepDefinition.CarManufacturerAPI.manufacturer_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 56000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "access manufacturer api without token",
+            "match": {
+              "location": "stepDefinition.CarManufacturerAPI.access_manufacturer_api_without_token()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "status code is 401",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.CarManufacturerAPI.status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "manufacturer api response body contains message and error details",
+            "match": {
+              "location": "stepDefinition.CarManufacturerAPI.manufacturer_api_response_body_contains_message_and_error_details()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T12:48:09.786Z",
+        "line": 9,
+        "name": "user should not get manufacturer list with invalid key",
+        "description": "",
+        "id": "verify-errors-for-car-manufacturer-api;user-should-not-get-manufacturer-list-with-invalid-key",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "manufacturer API endpoint",
+            "match": {
+              "location": "stepDefinition.CarManufacturerAPI.manufacturer_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 64000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "access manufacturer api with invalid token",
+            "match": {
+              "location": "stepDefinition.CarManufacturerAPI.access_manufacturer_api_with_invalid_token()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected:\u003c403\u003e but was:\u003c401\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat stepDefinition.CarManufacturerAPI.status_code_is(CarManufacturerAPI.java:39)\r\n\tat ✽.status code is 403(file:///C:/Users/Trupti/IdeaProjects/API/src/test/java/feature/carManufacturerAPI/car_manufacturer_api_error.feature:12)\r\n",
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "status code is 403",
+            "match": {
+              "arguments": [
+                {
+                  "val": "403",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.CarManufacturerAPI.status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "manufacturer api response body contains message and error details",
+            "match": {
+              "location": "stepDefinition.CarManufacturerAPI.manufacturer_api_response_body_contains_message_and_error_details()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T12:48:09.858Z",
+        "line": 15,
+        "name": "user should not get manufacturer list with invalid locale",
+        "description": "",
+        "id": "verify-errors-for-car-manufacturer-api;user-should-not-get-manufacturer-list-with-invalid-locale",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "manufacturer API endpoint",
+            "match": {
+              "location": "stepDefinition.CarManufacturerAPI.manufacturer_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 56000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "access manufacturer api with invalid locale",
+            "match": {
+              "location": "stepDefinition.CarManufacturerAPI.access_manufacturer_api_with_invalid_locale()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinition.CarManufacturerAPI.status_code_is(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify errors for car manufacturer api",
+    "description": "",
+    "id": "verify-errors-for-car-manufacturer-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/carManufacturerAPI/car_manufacturer_api_error.feature",
+    "tags": []
+  }
+]

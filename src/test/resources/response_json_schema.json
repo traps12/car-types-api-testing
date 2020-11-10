@@ -1,0 +1,35 @@
+{
+  "type":"object",
+  "required":[
+    "page",
+    "pageSize",
+    "totalPageCount",
+    "wkda"
+  ],
+  "properties":{
+    "page":{
+      "type":"number",
+      "minimum":0,
+      "maximum":2147483647
+    },
+    "pageSize":{
+      "type":"number",
+      "minimum":0,
+      "maximum":2147483647
+    },
+    "totalPageCount":{
+      "type":"number",
+      "minimum":0,
+      "maximum":2147483647
+    },
+    "wkda":{
+      "type":"object",
+      "properties":{
+        "^[0-9*#+]+$":{
+          "type":"string",
+          "minLength":1
+        }
+      }
+    }
+  }
+}

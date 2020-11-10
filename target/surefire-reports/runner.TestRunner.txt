@@ -1,0 +1,33 @@
+-------------------------------------------------------------------------------
+Test set: runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 8.808 s <<< FAILURE! - in runner.TestRunner
+Json schema validation for build date api(Get list of car build dates for given manufacture and main types)  Time elapsed: 1.18 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object has missing required properties (["page","pageSize","totalPageCount"])
+    level: "error"
+    schema: {"loadingURI":"file:/C:/Users/Trupti/IdeaProjects/API/target/test-classes/response_json_schema.json#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["page","pageSize","totalPageCount","wkda"]
+    missing: ["page","pageSize","totalPageCount"]
+
+  Actual: {"wkda":{"2016":"2016","2017":"2017","2018":"2018","2019":"2019"}}
+
+
+user should not get car build date details without key(Verify errors for car build dates api)  Time elapsed: 0.25 s  <<< FAILURE!
+java.lang.AssertionError: error message is expected but not found 
+
+user should not get car build date details with invalid key(Verify errors for car build dates api)  Time elapsed: 0.11 s  <<< FAILURE!
+java.lang.AssertionError: error message is expected but not found 
+
+user should not get car main types list with invalid key(Verify errors for car main types api)  Time elapsed: 0.182 s  <<< FAILURE!
+java.lang.AssertionError: error message is expected but not found 
+
+user should not get manufacturer list with invalid key(Verify errors for car manufacturer api)  Time elapsed: 0.064 s  <<< FAILURE!
+java.lang.AssertionError: expected:<403> but was:<401>
+
