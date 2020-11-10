@@ -28,4 +28,5 @@ Reporting:
 - For reporting used maven-cucumber-reporting plugin 
 - To generate report need to run "mvn clean install"
 - Find report under "target/cucumber-html-reports/overview-features.html"
+- For execution report overview please refer Test_Execution_Report.docx file
 
