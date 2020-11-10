@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 21, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 8.808 s <<< FAILURE! - in runner.TestRunner
-Json schema validation for build date api(Get list of car build dates for given manufacture and main types)  Time elapsed: 1.18 s  <<< FAILURE!
+Tests run: 21, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 10.032 s <<< FAILURE! - in runner.TestRunner
+Json schema validation for build date api(Get list of car build dates for given manufacture and main types)  Time elapsed: 1.281 s  <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 Response body doesn't match expectation.
@@ -19,14 +19,11 @@ error: object has missing required properties (["page","pageSize","totalPageCoun
   Actual: {"wkda":{"2016":"2016","2017":"2017","2018":"2018","2019":"2019"}}
 
 
-user should not get car build date details without key(Verify errors for car build dates api)  Time elapsed: 0.25 s  <<< FAILURE!
+user should not get car build date details with invalid key(Verify errors for car build dates api)  Time elapsed: 0.104 s  <<< FAILURE!
 java.lang.AssertionError: error message is expected but not found 
 
-user should not get car build date details with invalid key(Verify errors for car build dates api)  Time elapsed: 0.11 s  <<< FAILURE!
-java.lang.AssertionError: error message is expected but not found 
-
-user should not get car main types list with invalid key(Verify errors for car main types api)  Time elapsed: 0.182 s  <<< FAILURE!
-java.lang.AssertionError: error message is expected but not found 
+user should not get car main types list with invalid key(Verify errors for car main types api)  Time elapsed: 0.144 s  <<< FAILURE!
+java.lang.AssertionError: expected:<403> but was:<401>
 
 user should not get manufacturer list with invalid key(Verify errors for car manufacturer api)  Time elapsed: 0.064 s  <<< FAILURE!
 java.lang.AssertionError: expected:<403> but was:<401>

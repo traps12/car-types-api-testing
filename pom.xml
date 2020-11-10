@@ -82,7 +82,7 @@
                             <projectName>Car-API-Automation</projectName>
                             <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
                             <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
-
+                            <checkBuildResult>true</checkBuildResult>
                         </configuration>
                     </execution>
                 </executions>
