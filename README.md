@@ -1,4 +1,4 @@
-# API Testing
+# Car API Testing
 
 ## Overview
 The following repo contains restful API Testing using rest assured and cucumber BDD framework
