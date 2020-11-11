@@ -21,16 +21,15 @@ public class CarBuildDatesAPI {
     private String defaultMainType = "Punto";
     private String defaultBuildDate = "2016";
 
-
     String manufacturer_code;
     String mainTypes;
     CarUtility carUtility = new CarUtility();;
     CarConfiguration config = CarConfiguration.getInstance();
 
-    @Given("build dates API endpoint and main type and manufacturer code")
-    public void build_dates_api_endpoint_and_main_type_and_manufacturer_code() {
+    @Given("build dates API endpoint")
+    public void build_dates_api_endpoint() {
         carUtility.createNewRequestSpec(config.getBaseURI());
-        carUtility.setQueryParams(config.getWa_key(), "en");
+        carUtility.setQueryParams(config.getWa_key(), Constants.DEFAULT_LOCALE);
         response = carUtility.makeCallToAPI(config.getManufacturerURL());
         manufacturer_code = carUtility.getManufacturerCode(response);
         if(manufacturer_code == null){
@@ -38,18 +37,18 @@ public class CarBuildDatesAPI {
         }
 
         carUtility.createNewRequestSpec(config.getBaseURI());
-        carUtility.setQueryParams(config.getWa_key(), manufacturer_code, "en");
+        carUtility.setQueryParams(config.getWa_key(), manufacturer_code, Constants.DEFAULT_LOCALE);
         response = carUtility.makeCallToAPI(config.getMainTypeURL());
         mainTypes = carUtility.getMainType(response);
         if(mainTypes == null){
             mainTypes = defaultMainType;
         }
-
+        // Creating new request for build date API
+        carUtility.createNewRequestSpec(config.getBaseURI());
     }
 
     @When("I perform GET operation with valid key {string} manufacturer code and main types")
     public void i_perform_get_operation_with_valid_key_manufacturer_code_and_main_types(String locale) {
-        carUtility.createNewRequestSpec(config.getBaseURI());
         carUtility.setQueryParams(config.getWa_key(), manufacturer_code, mainTypes,locale);
         response = carUtility.makeCallToAPI(config.getBuildDateURL());
     }
@@ -57,13 +56,6 @@ public class CarBuildDatesAPI {
     @Then("status code is {int} for build dates api")
     public void status_code_is_for_build_dates_api(int statusCode) {
         Assert.assertEquals(statusCode, response.getStatusCode());
-    }
-
-    @Then("build dates api response body contains message and error details")
-    public void build_dates_api_response_body_contains_message_and_error_details() {
-        Assert.assertNotNull("error message is expected but not found ",response.header("Content-Type"));
-        Assert.assertTrue(response.header("Content-Type").contains("application/json"));
-        Assert.assertEquals(Constants.ERROR_MESSAGE, response.jsonPath().getString("error"));
     }
 
     @Then("I get list of build dates of car in response body")
@@ -85,23 +77,39 @@ public class CarBuildDatesAPI {
 
     @When("access build dates api without token")
     public void access_build_dates_api_without_token() {
-        carUtility.createNewRequestSpec(config.getBaseURI());
-        carUtility.setQueryParams(null, manufacturer_code, mainTypes,"en");
+        carUtility.setQueryParams(null, manufacturer_code, mainTypes,Constants.DEFAULT_LOCALE);
         response = carUtility.makeCallToAPI(config.getBuildDateURL());
     }
 
     @When("access build dates api with invalid token")
     public void access_build_dates_api_with_invalid_token() {
-        carUtility.createNewRequestSpec(config.getBaseURI());
-        carUtility.setQueryParams(invalidKey, manufacturer_code, mainTypes,"en");
+        carUtility.setQueryParams(invalidKey, manufacturer_code, mainTypes,Constants.DEFAULT_LOCALE);
         response = carUtility.makeCallToAPI(config.getBuildDateURL());
     }
 
     @When("access build dates api with invalid locale")
     public void access_build_dates_api_with_invalid_locale() {
-        carUtility.createNewRequestSpec(config.getBaseURI());
         carUtility.setQueryParams(config.getWa_key(), manufacturer_code, mainTypes,invalidLocale);
         response = carUtility.makeCallToAPI(config.getBuildDateURL());
+    }
+
+    @When("access build dates api without manufacturer code")
+    public void access_build_dates_api_without_manufacturer_code() {
+        carUtility.setQueryParams(config.getWa_key(), null, mainTypes,Constants.DEFAULT_LOCALE);
+        response = carUtility.makeCallToAPI(config.getBuildDateURL());
+    }
+
+    @When("access build dates api without main type")
+    public void access_build_dates_api_without_main_type() {
+        carUtility.setQueryParams(config.getWa_key(), manufacturer_code, null,Constants.DEFAULT_LOCALE);
+        response = carUtility.makeCallToAPI(config.getBuildDateURL());
+    }
+
+    @Then("build dates api response body contains error message {string}")
+    public void build_dates_api_response_body_contains_error_message(String errorMessage) {
+        Assert.assertNotNull("error message is expected but not found ",response.header("Content-Type"));
+        Assert.assertTrue(response.header("Content-Type").contains("application/json"));
+        Assert.assertEquals(errorMessage, response.jsonPath().getString("error"));
     }
 
 

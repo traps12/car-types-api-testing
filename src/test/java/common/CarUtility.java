@@ -29,11 +29,13 @@ public class CarUtility {
 
     public void setQueryParams(String wa_key,String manufacturerCode, String language){
         setQueryParams(wa_key,language);
+        if(manufacturerCode != null)
         requestSpec.queryParam(Constants.MANUFACTURER_CODE, manufacturerCode);
     }
 
     public void setQueryParams(String wa_key,String manufacturerCode,String mainType, String language){
         setQueryParams(wa_key,manufacturerCode,language);
+        if(mainType != null)
         requestSpec.queryParam(Constants.MAIN_TYPE, mainType);
     }
 

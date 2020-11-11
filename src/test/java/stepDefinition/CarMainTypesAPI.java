@@ -7,11 +7,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import org.junit.Assert;
-
 import java.util.Map;
-
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
-
 
 public class CarMainTypesAPI {
 
@@ -24,21 +21,22 @@ public class CarMainTypesAPI {
     CarUtility carUtility = new CarUtility();;
     CarConfiguration config = CarConfiguration.getInstance();
 
-    @Given("main types API endpoint and manufacturer code")
-    public void main_types_api_endpoint_and_manufacturer_code() {
+    @Given("main types API endpoint")
+    public void main_types_api_endpoint() {
         carUtility.createNewRequestSpec(config.getBaseURI());
-        carUtility.setQueryParams(config.getWa_key(), "en");
+        carUtility.setQueryParams(config.getWa_key(), Constants.DEFAULT_LOCALE);
         response = carUtility.makeCallToAPI(config.getManufacturerURL());
         manufacturer_code = carUtility.getManufacturerCode(response);
         if(manufacturer_code == null){
             manufacturer_code = defaultManufaturerCode;
         }
+        // Creating new request for main type API
+        carUtility.createNewRequestSpec(config.getBaseURI());
     }
 
     @When("I perform GET operation with valid key and {string} and manufacturer code")
-    public void i_perform_get_operation_with_valid_key_and_and_manufacturer_code(String string) {
-        carUtility.createNewRequestSpec(config.getBaseURI());
-        carUtility.setQueryParams(config.getWa_key(), manufacturer_code, "en");
+    public void i_perform_get_operation_with_valid_key_and_and_manufacturer_code(String locale) {
+        carUtility.setQueryParams(config.getWa_key(), manufacturer_code, locale);
         response = carUtility.makeCallToAPI(config.getMainTypeURL());
     }
 
@@ -55,7 +53,7 @@ public class CarMainTypesAPI {
 
     @When("user access main type api with valid token manufacturer code and without locale")
     public void user_access_main_type_api_with_valid_token_manufacturer_code_and_without_locale() {
-        carUtility.setQueryParams(config.getWa_key(), manufacturer_code, "en");
+        carUtility.setQueryParams(config.getWa_key(), manufacturer_code, Constants.DEFAULT_LOCALE);
         response = carUtility.makeCallToAPI(config.getMainTypeURL());
     }
 
@@ -72,28 +70,26 @@ public class CarMainTypesAPI {
 
     @When("access main types api without token")
     public void access_main_types_api_without_token() {
-        carUtility.createNewRequestSpec(config.getBaseURI());
-        carUtility.setQueryParams(null, manufacturer_code, "en");
+        carUtility.setQueryParams(null, manufacturer_code, Constants.DEFAULT_LOCALE);
         response = carUtility.makeCallToAPI(config.getMainTypeURL());
     }
 
     @When("access main types api with invalid token")
     public void access_main_types_api_with_invalid_token() {
-        carUtility.createNewRequestSpec(config.getBaseURI());
-        carUtility.setQueryParams(invalidKey, manufacturer_code, "en");
+        carUtility.setQueryParams(invalidKey, manufacturer_code, Constants.DEFAULT_LOCALE);
         response = carUtility.makeCallToAPI(config.getMainTypeURL());
     }
 
-    @When("access main types api with invalid locale")
-    public void access_main_types_api_with_invalid_locale() {
-        carUtility.setQueryParams(config.getWa_key(), manufacturer_code, invalidLocale);
-        response = carUtility.makeCallToAPI(config.getMainTypeURL());
-    }
-
-    @Then("main types api response body contains message and error details")
-    public void main_types_api_response_body_contains_message_and_error_details() {
+    @Then("main types api response body contains error message {string}")
+    public void main_types_api_response_body_contains_error_message(String errorMessage) {
         Assert.assertNotNull("error message is expected but not found ",response.header("Content-Type"));
         Assert.assertTrue(response.header("Content-Type").contains("application/json"));
-        Assert.assertEquals(Constants.ERROR_MESSAGE, response.jsonPath().getString("error"));
+        Assert.assertEquals(errorMessage, response.jsonPath().getString("error"));
+    }
+
+    @When("access main types api without manufacturer code")
+    public void access_main_types_api_without_manufacturer_code() {
+        carUtility.setQueryParams(config.getWa_key(), null,Constants.DEFAULT_LOCALE);
+        response = carUtility.makeCallToAPI(config.getBuildDateURL());
     }
 }

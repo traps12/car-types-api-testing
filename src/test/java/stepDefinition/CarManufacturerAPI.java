@@ -8,9 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import org.junit.Assert;
-
 import java.util.Map;
-
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 
@@ -29,8 +27,8 @@ public class CarManufacturerAPI {
     }
 
     @When("I perform GET operation with valid key and {string}")
-    public void i_perform_get_operation_with_valid_key_and(String language) {
-        carUtility.setQueryParams(config.getWa_key(), language);
+    public void i_perform_get_operation_with_valid_key_and(String locale) {
+        carUtility.setQueryParams(config.getWa_key(), locale);
         response = carUtility.makeCallToAPI(config.getManufacturerURL());
     }
 
@@ -81,10 +79,10 @@ public class CarManufacturerAPI {
         response.then().assertThat().body(matchesJsonSchemaInClasspath("response_json_schema.json"));
     }
 
-    @Then("manufacturer api response body contains message and error details")
-    public void manufacturer_api_response_body_contains_message_and_error_details() {
+    @Then("manufacturer api response body contains error message {string}")
+    public void manufacturer_api_response_body_contains_error_message(String errorMessage) {
         Assert.assertNotNull("Error message is expected but not found",response.header("Content-Type"));
         Assert.assertTrue(response.header("Content-Type").contains("application/json"));
-        Assert.assertEquals(Constants.ERROR_MESSAGE, response.jsonPath().getString("error"));
+        Assert.assertEquals(errorMessage, response.jsonPath().getString("error"));
     }
 }
